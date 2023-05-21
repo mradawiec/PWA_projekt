@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url(./img/background.jpg);
+    background-image: url('./img/background.jpg');
     background-size: cover;
     background-position: 30% 0;
 }
@@ -24,7 +24,7 @@ header {
 header h1 {
     margin-bottom: 5px;
     padding-bottom: 2px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black
 }
 
 .all_places {
