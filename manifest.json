@@ -1,0 +1,16 @@
+{
+    "theme_color": "#359b29",
+    "background_color": "#359b29",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/PWA_projekt/",
+    "name": "Przewodnik kulinarny",
+    "short_name": "Kulinaria",
+    "description": "Zaawansowane technologie internetowe - Projekt PWA",
+    "orientation": "portrait",
+    "icons": [{
+        "src": "./img/diet.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}
