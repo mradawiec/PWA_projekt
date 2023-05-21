@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -18,7 +18,7 @@ header {
     align-items: center;
     background-image: url(./img/background.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 30% 0;
 }
 
 header h1 {
@@ -29,6 +29,10 @@ header h1 {
 
 .all_places {
     padding: 20px;
+}
+
+.single_place {
+    margin: 10px auto;
 }
 
 .single_place img {
