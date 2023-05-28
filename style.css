@@ -3,10 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    line-height: 1.5;
 
+}
 html {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+}
+
+.float-right {
+    float: right!important;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 0.25rem 0.5rem;
+    
 }
 
 header {
@@ -61,4 +73,13 @@ footer {
         height: 244px;
         object-fit: cover;
     }
+}
+.rounded {
+    border-radius: 0.25rem!important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
