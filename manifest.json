@@ -8,9 +8,11 @@
     "short_name": "Kulinaria",
     "description": "Zaawansowane technologie internetowe - Projekt PWA",
     "orientation": "portrait",
-    "icons": [{
-        "src": "./img/diet.png",
-        "sizes": "512x512",
-        "type": "image/png"
-    }]
+    "icons": [
+        {
+            "src": "./img/diet.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }

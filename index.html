@@ -12,59 +12,283 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#359b29">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrapp.min.css">
 </head>
 
 <body>
     <header>
-        <div>
-            <h1>Przewodnik po jedzeniu</h1>
-            <h2>Wyjedź ze mną po kulinarnych przygodach</h2>
-        </div>
-        <a href="#main">Czytaj więcej</a>
+        <nav class="navbar navbar-dark lighten-4  navbar-expand-lg">
+            <div class="container position-relative">
+                <a class="navbar-brand" href="/"><img src="./img/diet.png" class="d-inline-block logo" alt=""></a>
+                <button class="navbar-toggler first-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon1"><span></span><span></span><span></span></div>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent20" style="">
+                    <ul class="navbar-nav" style="margin:0 auto">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle font-weight-bold ml-auto" href="#" id="navbarDropdown1"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Test
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy"> Test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy">
+                                    Test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy">
+                                    TEst</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy"> Test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy"> Test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy"> Test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy"> Test</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link ml-auto" href="">test</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link ml-auto" href="">Test</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle font-weight-bold ml-auto" href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Test
+                            </a>
+                            <div class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href=""
+                                    style="background-color:#ff6666; 	color:white; font-weight:bold">
+                                    Test</a>
+                                <div class="dropdown-divider mt-0"></div>
+                                <a class="dropdown-item " href=""><span class="font-weight-bold"><img src=""
+                                            class="width-20px" alt="Ikona" loading="lazy"> </span>test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item " href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy">
+                                    test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><span class="font-weight-bold"><img src="" alt="Ikona"
+                                            class="width-20px" loading="lazy"> </span>Test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy"> test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img alt="Ikona" src="" class="width-20px"
+                                        loading="lazy"> test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img alt="Ikona" src="" class="width-20px"
+                                        loading="lazy"> test
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img alt="Ikona" src="" class="width-20px"
+                                        loading="lazy">
+                                    test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href=""><img alt="Ikona" src="" class="width-20px"
+                                        loading="lazy">test</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link ml-auto" href="">test</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link ml-auto" href="">test</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link ml-auto" href="">test</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link ml-auto" href="">test</a>
+                        </li>
+                    </ul>
+                    <div class="login">
+                        <button type="button" aria-expanded="false" aria-controls="collapseExample"
+                            class="btn btn-danger" data-toggle="modal" data-target="#okienkologowania"> ZALOGUJ SIĘ <i
+                                class="fas fa-level-down-alt"></i></button>
+                    </div>
+                </div>
+                <div class="collapse modal-button-position" id="collapseExample">
+                </div>
+            </div>
+
+        </nav>
     </header>
-    <main id="main">
-        <section class="all_dishes">
+    <main>
+        <section class="dishes">
             <h2>Dania warte zjedzenia</h2>
-            <div class="dishes">
-                <div class="dish">
-                    <h3>Włochy</h3>
-                    <img src="./img/carbonara.jpg" alt="carbonara">
-                    <p><b>Pasta alla carbonara (spaghetti alla carbonara)</b> potrawa kuchni włoskiej złożona z makaronu, jajek, pancetty lub guanciale, sera pecorino romano lub parmezanu oraz czarnego pieprzu. Niepoprawnym jest mówienie o „sosie carbonara”,
-                        ponieważ makaron i pozostałe składniki stanowią tu nierozerwalną całość.</p>
-                    <p>W niektórych przepisach zamiast całych jaj używa się samych żółtek. Pieprz jest obowiązkowy. Najpowszechniej używanym makaronem jest spaghetti. Tuż za nim plasuje się bucatini. Używa się też m.in. makaronu w kształcie tzw. rurek (penne,
-                        rigatoni, maccheroni).</p>
-                    <p>Kwestią sporną jest dodatek śmietany. Zdaniem tradycjonalistów dodanie jej do carbonary jest błędem. Używają jej głównie obcokrajowcy. Inne rzadziej spotykane składniki (głównie poza granicami Włoch) to np. smażona cebula, czosnek
-                        lub białe wino.</p>
-                        <button type="button" class="btn btn-outline-info rounded float-right btn-sm" data-toggle="modal" data-target="#carbonara">Zobacz Przepis</button>
-                </div>
-                <div class="dish">
-                    <h3>United States of America</h3>
-                    <img src="./img/pizza.jpg" alt="Chicago style pizza">
-                    <p><b>Chicago-style pizza</b>, inaczej zwana też deep-dish pizza, to pizza na grubym cieście pochodząca z Chicago. Pieczona w głębokiej blasze, przypomina bardziej ciasto niż tradycyjną pizzę. Na samym spodzie pizzy kładzie się ser, później
-                        pozostałe dodatki, najczęściej kiełbasę (ang. Italian sausage), a dopiero ostatnia warstwa to sos pomidorowy (ang. tomato sauce). Chicago-style pizza prawdopodobnie została wynaleziona w Pizzerii Uno w Chicago w 1943 i obecnie
-                        cieszy się popularnością w całych Stanach Zjednoczonych.</p>
-                </div>
-                <div class="dish">
-                    <h3>Turcja</h3>
-                    <img src="./img/kebab.jpg" alt="Kebab pita">
-                    <p><b>Sallam Allekum</b> Kebab to turecka potrawa, która cieszy się ogromną popularnością Polaków. Jest wiele rodzajów kebabów, dzięki temu każdy może znaleźć coś dla siebie. Dobrej jakości mięso i świeże surówki, a także pyszne sosy
-                        gwarantują, że kebab będzie pełnowartościowym, sycącym posiłkiem. Opcją dla osób, które ograniczają spożywanie mięsa, jest kebab z falafelami, czyli smażonymi kuleczkami z ciecierzycy.</p>
-                </div>
-                <div class="dish">
-                    <h3>Bługaria</h3>
-                    <img src="./img/gjuwecz.jpg" alt="Gjuwecz">
-                    <p>
-                        <b>Gjuwecz</b> jest to ogólna nazwa bułgarskich potraw, przygotowanych w glinianym naczyniu (o tej samej nazwie), które umożliwia długie duszenie potraw w niewysokich temperaturach.
-                        <p>Głównym składnikiem potrawy są warzywa oraz mięso (opcjonalne). Poniżej proponujemy przepis na przepyszny gjuwecz z mięsem.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Włochy</h3>
+                        <img src="./img/carbonara.jpg" alt="carbonara" width="100%">
+                        <p><b>Pasta alla carbonara (spaghetti alla carbonara)</b> potrawa kuchni włoskiej złożona z
+                            makaronu, jajek, pancetty lub guanciale, sera pecorino romano lub parmezanu oraz czarnego
+                            pieprzu. Niepoprawnym jest mówienie o „sosie carbonara”,
+                            ponieważ makaron i pozostałe składniki stanowią tu nierozerwalną całość.</p>
+                        <p>W niektórych przepisach zamiast całych jaj używa się samych żółtek. Pieprz jest obowiązkowy.
+                            Najpowszechniej używanym makaronem jest spaghetti. Tuż za nim plasuje się bucatini. Używa
+                            się
+                            też m.in. makaronu w kształcie tzw. rurek (penne, rigatoni, maccheroni).</p>
+                        <p>Kwestią sporną jest dodatek śmietany. Zdaniem tradycjonalistów dodanie jej do carbonary jest
+                            błędem. Używają jej głównie obcokrajowcy. Inne rzadziej spotykane składniki (głównie poza
+                            granicami Włoch) to np. smażona cebula, czosnek lub białe wino.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Pokaż
+                            przepis</button>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>United States of America</h3>
+                        <img src="./img/pizza.jpg" alt="Chicago style pizza" width="100%">
+                        <p><b>Chicago-style pizza</b>, inaczej zwana też deep-dish pizza, to pizza na grubym cieście
+                            pochodząca z Chicago. Pieczona w głębokiej blasze, przypomina bardziej ciasto niż tradycyjną
+                            pizzę. Na samym spodzie pizzy kładzie się ser, później
+                            pozostałe dodatki, najczęściej kiełbasę (ang. Italian sausage), a dopiero ostatnia warstwa
+                            to
+                            sos pomidorowy (ang. tomato sauce). Chicago-style pizza prawdopodobnie została wynaleziona w
+                            Pizzerii Uno w Chicago w 1943 i obecnie
+                            cieszy się popularnością w całych Stanach Zjednoczonych.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Pokaż
+                            przepis</button>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="dishes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Turcja</h3>
+                        <img src="./img/kebab.jpg" alt="Kebab pita" width="100%">
+                        <p><b>Sallam Allekum</b> Kebab to turecka potrawa, która cieszy się ogromną popularnością
+                            Polaków.
+                            Jest wiele rodzajów kebabów, dzięki temu każdy może znaleźć coś dla siebie. Dobrej jakości
+                            mięso
+                            i świeże surówki, a także pyszne sosy
+                            gwarantują, że kebab będzie pełnowartościowym, sycącym posiłkiem. Opcją dla osób, które
+                            ograniczają spożywanie mięsa, jest kebab z falafelami, czyli smażonymi kuleczkami z
+                            ciecierzycy.
+                        </p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Pokaż
+                            przepis</button>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Bługaria</h3>
+                        <img src="./img/gjuwecz.jpg" alt="Gjuwecz" width="100%">
+                        <p>
+                            <b>Gjuwecz</b> jest to ogólna nazwa bułgarskich potraw, przygotowanych w glinianym naczyniu
+                            (o tej samej nazwie), które umożliwia długie duszenie potraw w niewysokich temperaturach.
+                        </p>
+                        <p>Głównym składnikiem potrawy są warzywa oraz mięso (opcjonalne). Poniżej proponujemy przepis
+                            na przepyszny gjuwecz z mięsem.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal4">Pokaż
+                            przepis</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel1">Modal 1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Treść Modalu 1</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Modal 2</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Treść Modalu 2</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="modalLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel3">Modal 3</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Treść Modalu 3</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="modalLabel5"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel4">Modal 4</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Treść Modalu 4</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <footer>
         <p>Zaawansowane technologie internetowe - Projekt WSB 2023</p>
     </footer>
-    <script src="sw.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="sw.js"></script>
 </body>
 
 </html>
