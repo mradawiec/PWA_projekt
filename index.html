@@ -8,18 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>Aplikacja PWA</title>
+    <title>Kuchnia marzeń</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#359b29">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrapp.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/ikona.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-dark lighten-4  navbar-expand-lg">
             <div class="container position-relative">
-                <a class="navbar-brand" href="/"><img src="./img/diet.png" class="d-inline-block logo" alt=""></a>
+                <a class="navbar-brand" href="./index.html"><img src="./img/diet.png" class="d-inline-block logo"
+                        style="height:50px; width:50px" alt="logo"></a>
                 <button class="navbar-toggler first-button collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,87 +42,15 @@
                                 <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
                                         loading="lazy"> Test</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
-                                        loading="lazy">
-                                    Test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
-                                        loading="lazy">
-                                    TEst</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
-                                        loading="lazy"> Test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
-                                        loading="lazy"> Test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
-                                        loading="lazy"> Test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
-                                        loading="lazy"> Test</a>
                             </div>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link ml-auto" href="">test</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link ml-auto" href="">Test</a>
-                        </li>
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle font-weight-bold ml-auto" href="#" id="navbarDropdown"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Test
-                            </a>
-                            <div class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href=""
-                                    style="background-color:#ff6666; 	color:white; font-weight:bold">
-                                    Test</a>
-                                <div class="dropdown-divider mt-0"></div>
-                                <a class="dropdown-item " href=""><span class="font-weight-bold"><img src=""
-                                            class="width-20px" alt="Ikona" loading="lazy"> </span>test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item " href=""><img src="" class="width-20px" alt="Ikona"
-                                        loading="lazy">
-                                    test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><span class="font-weight-bold"><img src="" alt="Ikona"
-                                            class="width-20px" loading="lazy"> </span>Test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
-                                        loading="lazy"> test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img alt="Ikona" src="" class="width-20px"
-                                        loading="lazy"> test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img alt="Ikona" src="" class="width-20px"
-                                        loading="lazy"> test
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img alt="Ikona" src="" class="width-20px"
-                                        loading="lazy">
-                                    test</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href=""><img alt="Ikona" src="" class="width-20px"
-                                        loading="lazy">test</a>
-                            </div>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link ml-auto" href="">test</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link ml-auto" href="">test</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link ml-auto" href="">test</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link ml-auto" href="">test</a>
+                            <a class="nav-link ml-auto" href="./api/pogoda.html">Sprawdź pogodę</a>
                         </li>
                     </ul>
                     <div class="login">
-                        <button type="button" aria-expanded="false" aria-controls="collapseExample"
-                            class="btn btn-danger" data-toggle="modal" data-target="#okienkologowania"> ZALOGUJ SIĘ <i
+                        <button type="button" id="loginButton" aria-expanded="false" aria-controls="collapseExample"
+                            class="btn btn-danger" data-toggle="modal" data-target="#loginModal"> ZALOGUJ SIĘ <i
                                 class="fas fa-level-down-alt"></i></button>
                     </div>
                 </div>
@@ -127,73 +61,124 @@
         </nav>
     </header>
     <main>
-        <section class="dishes">
-            <h2>Dania warte zjedzenia</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>Włochy</h3>
-                        <img src="./img/carbonara.jpg" alt="carbonara" width="100%">
-                        <p><b>Pasta alla carbonara (spaghetti alla carbonara)</b> potrawa kuchni włoskiej złożona z
-                            makaronu, jajek, pancetty lub guanciale, sera pecorino romano lub parmezanu oraz czarnego
-                            pieprzu. Niepoprawnym jest mówienie o „sosie carbonara”,
-                            ponieważ makaron i pozostałe składniki stanowią tu nierozerwalną całość.</p>
-                        <p>W niektórych przepisach zamiast całych jaj używa się samych żółtek. Pieprz jest obowiązkowy.
-                            Najpowszechniej używanym makaronem jest spaghetti. Tuż za nim plasuje się bucatini. Używa
-                            się
-                            też m.in. makaronu w kształcie tzw. rurek (penne, rigatoni, maccheroni).</p>
-                        <p>Kwestią sporną jest dodatek śmietany. Zdaniem tradycjonalistów dodanie jej do carbonary jest
-                            błędem. Używają jej głównie obcokrajowcy. Inne rzadziej spotykane składniki (głównie poza
-                            granicami Włoch) to np. smażona cebula, czosnek lub białe wino.</p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Pokaż
-                            przepis</button>
+        <section class="dishes" style="padding-top: 20px;">
+            <h1 style="text-align: center; font-weight: lighter;">Dania warte zjedzenia</h1>
+            <div class="container_1" style="max-width: 1440px;">
+                <div class="row equal-height">
+                    <div class="col-md-4">
+                        <div class="card d-flex flex-column bg-transparent">
+                            <h3>Włochy</h3>
+                            <img src="./img/carbonara.jpg" alt="carbonara" class="img-fluid">
+                            <p><b>Pasta alla carbonara (spaghetti alla carbonara)</b> potrawa kuchni włoskiej złożona z
+                                makaronu, jajek, pancetty lub guanciale, sera pecorino romano lub parmezanu oraz
+                                czarnego
+                                pieprzu. Niepoprawnym jest mówienie o „sosie carbonara”,
+                                ponieważ makaron i pozostałe składniki stanowią tu nierozerwalną całość.</p>
+                            <p>W niektórych przepisach zamiast całych jaj używa się samych żółtek. Pieprz jest
+                                obowiązkowy.
+                                Najpowszechniej używanym makaronem jest spaghetti. Tuż za nim plasuje się bucatini.
+                                Używa
+                                się
+                                też m.in. makaronu w kształcie tzw. rurek (penne, rigatoni, maccheroni).</p>
+                            <button class="btn btn-outline-info rounded float-right btn-sm mt-auto" data-toggle="modal"
+                                data-target="#myModal1">Pokaż
+                                przepis</button>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <h3>United States of America</h3>
-                        <img src="./img/pizza.jpg" alt="Chicago style pizza" width="100%">
-                        <p><b>Chicago-style pizza</b>, inaczej zwana też deep-dish pizza, to pizza na grubym cieście
-                            pochodząca z Chicago. Pieczona w głębokiej blasze, przypomina bardziej ciasto niż tradycyjną
-                            pizzę. Na samym spodzie pizzy kładzie się ser, później
-                            pozostałe dodatki, najczęściej kiełbasę (ang. Italian sausage), a dopiero ostatnia warstwa
-                            to
-                            sos pomidorowy (ang. tomato sauce). Chicago-style pizza prawdopodobnie została wynaleziona w
-                            Pizzerii Uno w Chicago w 1943 i obecnie
-                            cieszy się popularnością w całych Stanach Zjednoczonych.</p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Pokaż
-                            przepis</button>
+                    <div class="col-md-4">
+                        <div class="card d-flex flex-column bg-transparent">
+                            <h3>United States of America</h3>
+                            <img src="./img/pizza.jpg" alt="Chicago style pizza" class="img-fluid">
+                            <p><b>Chicago-style pizza</b>, inaczej zwana też deep-dish pizza, to pizza na grubym cieście
+                                pochodząca z Chicago. Pieczona w głębokiej blasze, przypomina bardziej ciasto niż
+                                tradycyjną
+                                pizzę. Na samym spodzie pizzy kładzie się ser, później
+                                pozostałe dodatki, najczęściej kiełbasę (ang. Italian sausage), a dopiero ostatnia
+                                warstwa
+                                to
+                                sos pomidorowy (ang. tomato sauce). Chicago-style pizza prawdopodobnie została
+                                wynaleziona w
+                                Pizzerii Uno w Chicago w 1943 i obecnie
+                                cieszy się popularnością w całych Stanach Zjednoczonych.</p>
+                            <button class="btn btn-outline-info rounded float-right btn-sm mt-auto" data-toggle="modal"
+                                data-target="#myModal2">Pokaż
+                                przepis</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card d-flex flex-column bg-transparent">
+                            <h3>Turcja</h3>
+                            <img src="./img/kebab.jpg " alt="Kebab pita" class="img-fluid">
+                            <p><b>Kebab</b> to turecka potrawa, która cieszy się ogromną popularnością
+                                Polaków.
+                                Jest wiele rodzajów kebabów, dzięki temu każdy może znaleźć coś dla siebie. Dobrej
+                                jakości
+                                mięso
+                                i świeże surówki, a także pyszne sosy
+                                gwarantują, że kebab będzie pełnowartościowym, sycącym posiłkiem. Opcją dla osób, które
+                                ograniczają spożywanie mięsa, jest kebab z falafelami, czyli smażonymi kuleczkami z
+                                ciecierzycy.
+                            </p>
+                            <button class="btn btn-outline-info rounded float-right btn-sm mt-auto" data-toggle="modal"
+                                data-target="#myModal3">Pokaż
+                                przepis</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="dishes">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>Turcja</h3>
-                        <img src="./img/kebab.jpg" alt="Kebab pita" width="100%">
-                        <p><b>Sallam Allekum</b> Kebab to turecka potrawa, która cieszy się ogromną popularnością
-                            Polaków.
-                            Jest wiele rodzajów kebabów, dzięki temu każdy może znaleźć coś dla siebie. Dobrej jakości
-                            mięso
-                            i świeże surówki, a także pyszne sosy
-                            gwarantują, że kebab będzie pełnowartościowym, sycącym posiłkiem. Opcją dla osób, które
-                            ograniczają spożywanie mięsa, jest kebab z falafelami, czyli smażonymi kuleczkami z
-                            ciecierzycy.
-                        </p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Pokaż
-                            przepis</button>
+            <div class="container_1" style="max-width: 1440px;">
+                <div class="row equal-height">
+                    <div class="col-md-4">
+                        <div class="card d-flex flex-column bg-transparent">
+                            <h3>Bługaria</h3>
+                            <img src="./img/gjuwecz.jpg" alt="Gjuwecz" class="img-fluid">
+                            <p>
+                                <b>Gjuwecz</b> jest to ogólna nazwa bułgarskich potraw, przygotowanych w glinianym
+                                naczyniu
+                                (o tej samej nazwie), które umożliwia długie duszenie potraw w niewysokich
+                                temperaturach.
+                            </p>
+                            <p>Głównym składnikiem potrawy są warzywa oraz mięso (opcjonalne). Poniżej proponujemy
+                                przepis
+                                na przepyszny gjuwecz z mięsem.</p>
+                            <button class="btn btn-outline-info rounded float-right btn-sm mt-auto" data-toggle="modal"
+                                data-target="#myModal4">Pokaż
+                                przepis</button>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <h3>Bługaria</h3>
-                        <img src="./img/gjuwecz.jpg" alt="Gjuwecz" width="100%">
-                        <p>
-                            <b>Gjuwecz</b> jest to ogólna nazwa bułgarskich potraw, przygotowanych w glinianym naczyniu
-                            (o tej samej nazwie), które umożliwia długie duszenie potraw w niewysokich temperaturach.
-                        </p>
-                        <p>Głównym składnikiem potrawy są warzywa oraz mięso (opcjonalne). Poniżej proponujemy przepis
-                            na przepyszny gjuwecz z mięsem.</p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal4">Pokaż
-                            przepis</button>
+                    <div class="col-md-4">
+                        <div class="card d-flex flex-column bg-transparent">
+                            <h3>Polska</h3>
+                            <img src="./img/pierogi.jpeg" alt="Pierogi" class="img-fluid">
+                            <p>
+                                <b>Pierogi</b> są uważane za pracochłonną potrawę mączną. Są to kawałki cienko
+                                rozwałkowanego ciasta makaronowego z farszem słonym lub słodkim, uformowane na kształt
+                                trójkąta lub półkola i ugotowane w wodzie (pierogi gotowane) lub rzadziej upieczone
+                                (pierogi pieczone) czy usmażone.
+                            </p>
+                            <p>Według Polaków i cudzoziemców pierogi są uznawane za tradycyjną potrawę staropolskiej i
+                                współczesnej kuchni polskiej, chociaż ich ojczyzną są Chiny. Maleńkie pierożki nazywa
+                                się w języku polskim uszkami.</p>
+                            <button class="btn btn-outline-info rounded float-right btn-sm mt-auto" data-toggle="modal"
+                                data-target="#myModal5">Pokaż
+                                przepis</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card d-flex flex-column bg-transparent">
+                            <h3>Japonia</h3>
+                            <img src="./img/ramen.jpg" alt="Ramen" class="img-fluid">
+                            <p><b>Rāmen (jap. 拉麺 bądź ラーメン)</b> danie kuchni japońskiej, składające się z makaronu,
+                                bulionu (wywaru, sūpu, dashi-jiru) i innych składników.</p>
+                            <p>Rāmen trafił do Japonii w XIX wieku z Chin. Po II wojnie światowej stał się jedną z
+                                najpopularniejszych, niedrogich i powszechnie dostępnych potraw. Restauracje z rāmenem
+                                (rāmen-ya) są w całym kraju, serwując niezliczone regionalne odmiany.</p>
+                            <button class="btn btn-outline-info rounded float-right btn-sm mt-auto" data-toggle="modal"
+                                data-target="#myModal6">Pokaż
+                                przepis</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -279,6 +264,78 @@
             </div>
         </div>
 
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="modalLabel5"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel4">Modal 5</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Treść Modalu 5</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="modalLabel6"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel6">Modal 6</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Treść Modalu 6</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Logowanie</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="loginInput">Login</label>
+                                <input type="text" class="form-control" id="loginInput" placeholder="Wprowadź login">
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordInput">Hasło</label>
+                                <input type="password" class="form-control" id="passwordInput"
+                                    placeholder="Wprowadź hasło">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="./rejestracja/rejestracja.html" class="btn btn-success">Zarejestruj się</button></a>
+                        <button type="button" class="btn btn-primary" id="loginSubmitButton">Zaloguj</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
     </main>
     <footer>
@@ -289,6 +346,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="sw.js"></script>
+    <script src="logowanie.js"></script>
 </body>
 
 </html>

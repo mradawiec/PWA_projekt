@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Rejestracja</title>
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#359b29">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../bootstrapp.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/ikona.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark lighten-4  navbar-expand-lg">
+            <div class="container position-relative">
+                <a class="navbar-brand" href="../index.html"><img src="../img/diet.png" class="d-inline-block logo"
+                        style="height:50px; width:50px" alt="logo"></a>
+                <button class="navbar-toggler first-button collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon1"><span></span><span></span><span></span></div>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent20" style="">
+                    <ul class="navbar-nav" style="margin:0 auto">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle font-weight-bold ml-auto" href="#" id="navbarDropdown1"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Test
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href=""><img src="" class="width-20px" alt="Ikona"
+                                        loading="lazy"> Test</a>
+                                <div class="dropdown-divider"></div>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link ml-auto" href="../api/pogoda.html">Sprawdź pogodę</a>
+                        </li>
+                    </ul>
+                    <div class="login">
+                        <button type="button" id="loginButton" aria-expanded="false" aria-controls="collapseExample"
+                            class="btn btn-danger" data-toggle="modal" data-target="#loginModal"> ZALOGUJ SIĘ <i
+                                class="fas fa-level-down-alt"></i></button>
+                    </div>
+                </div>
+                <div class="collapse modal-button-position" id="collapseExample">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="card" style="padding: 10px; margin: 10px;">
+                    <form action="">
+                        <div class="form_box">
+                            <label for="username">Imię: </label>
+                            <input type="text" class="form-control" name="username" id="username"
+                                placeholder="Podaj imię">
+                            <p class="error"></p>
+                        </div>
+                        <div class="form_box">
+                            <label for="password">Hasło: </label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Podaj hasło">
+                            <p class="error"></p>
+                        </div>
+
+                        <div class="form_box">
+                            <label for="password2">Powtórz hasło: </label>
+                            <input type="password" class="form-control" name="password2" id="password2"
+                                placeholder="Powtórz hasło">
+                            <p class="error"></p>
+                        </div>
+
+                        <div class="form_box">
+                            <label for="email"> E-mail: </label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Podaj email">
+                            <p class="error"></p>
+                        </div>
+
+                        <div class="buttons">
+                            <input type="reset" class="btn btn-primary" value="Wyczyść" id="reset">
+                            <input type="submit" class="btn btn-success" value="Wyślij" id="send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Logowanie</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginInput">Login</label>
+                            <input type="text" class="form-control" id="loginInput" placeholder="Wprowadź login">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordInput">Hasło</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Wprowadź hasło">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="./rejestracja/rejestracja.html" class="btn btn-success">Zarejestruj się</button></a>
+                    <button type="button" class="btn btn-primary" id="loginSubmitButton">Zaloguj</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Projekt Uniwersytetu WSB :)</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="../sw.js"></script>
+    <script src="../logowanie.js"></script>
+</body>
+
+</html>
