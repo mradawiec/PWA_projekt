@@ -59,27 +59,58 @@
         </nav>
     </header>
     <main>
-        <section class="app_top">
-            <input type="text" placeholder="Podaj nazwę miasta">
-            <button>Sprawdź pogodę</button>
-            <p class="error"></p>
-        </section>
-        <section class="app_bottom">
-            <p class="date"></p>
-            <h2 class="city_name"></h2>
-            <div class="weather_box">
-                <div>
-                    <img src="" alt="">
-                    <p class="temperature"></p>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <section class="app_top">
+                            <input type="text" placeholder="Podaj nazwę miasta">
+                            <button class="weather-button">Sprawdź pogodę</button>
+                            <p class="error"></p>
+                        </section>
+
+                        <section class="app_bottom">
+                            <table>
+                                <tr>
+                                    <td colspan="2">
+                                        <h5 class="city_name"></h5>
+                                        <img src="" alt="" class="zdj">
+                                    </td>
+                                    <td colspan="2">
+                                        <h1 class="temperatura"><span class="feels_like"></span></h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p><span class="sunrise"></span><br><span class="sunset"></span></p>
+                                    </td>
+                                    <td colspan="2">
+                                        <p><span class="min"></span><br><span class="temperature_description"></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p><span class="pressure"></span></p>
+                                    </td>
+                                    <td colspan="2">
+                                        <p><span class="humidity"></span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p><span class="wind_speed"></span></p>
+                                    </td>
+                                    <td colspan="2">
+                                        <p><span class="clouds"></span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
                 </div>
-                <p class="temperature_description"></p>
             </div>
-            <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
-            <p>Ciśnienie: <span class="pressure"></span></p>
-            <p>Wilgotność: <span class="humidity"></span></p>
-            <p>Prędkość wiatru: <span class="wind_speed"></span></p>
-            <p>Zachmurzenie: <span class="clouds"></span></p>
-        </section>
+        </div>
     </main>
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
         aria-hidden="true">
@@ -122,7 +153,7 @@
     <script src="../logowanie.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-<script src="script.js"></script>
+<script src="./script.js"></script>
 </body>
 
 </html>

@@ -131,3 +131,74 @@ h1 {
 .error {
     color: red;
 }
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.temp {
+    color: #888;
+    font-size: small;
+    line-height: 1.5;
+}
+
+.temperatura {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100;
+}
+
+.weather-button {
+    display: inline-block;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weather-button span {
+    display: block;
+}
+
+.weather-button span:first-child {
+    margin-bottom: 4px;
+}
+
+.weather-button:hover {
+    background-color: #1f77ab;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    padding: 10px;
+}
+
+.app_bottom table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.app_bottom table tr:hover {
+    background-color: #ddd;
+}
+
+.app_bottom table th {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
