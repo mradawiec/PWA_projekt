@@ -17,10 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="logowanie.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="sw.js"></script>
 </head>
 
 <body>
+    <div id="loggedInUser" style="display: none;"></div>
+
     <header>
         <nav class="navbar navbar-dark lighten-4  navbar-expand-lg">
             <div class="container position-relative">
@@ -44,13 +52,16 @@
                             </div>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link ml-auto" href="./api/pogoda.html">Sprawdź pogodę</a>
+                            <a class="nav-link ml-auto" href="../api/pogoda.html">Sprawdź pogodę</a>
                         </li>
                     </ul>
                     <div class="login">
                         <button type="button" id="loginButton" aria-expanded="false" aria-controls="collapseExample"
                             class="btn btn-danger" data-toggle="modal" data-target="#loginModal"> ZALOGUJ SIĘ <i
                                 class="fas fa-level-down-alt"></i></button>
+                        <a href="./index.html"><button id="hideLoggedInUserButton" class="btn btn-success"
+                                aria-expanded="false" aria-controls="collapseExample"
+                                style="display: none; float: right;">Wyloguj</button></a>
                     </div>
                 </div>
                 <div class="collapse modal-button-position" id="collapseExample">
@@ -595,12 +606,13 @@
                     href="https://github.com/mradawiec">mradawiec</a></h6>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="sw.js"></script>
-    <script src="logowanie.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hideLoggedInUserButton").click(function () {
+                hideLoggedInUser();
+            });
+        });
+    </script>
 </body>
 
 </html>

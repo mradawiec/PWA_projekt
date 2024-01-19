@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>Rejestracja</title>
+    <title>Pogoda</title>
     <link rel="manifest" href="../manifest.json">
     <meta name="theme-color" content="#359b29">
     <link rel="stylesheet" href="../style.css">
@@ -17,9 +17,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../logowanie.js"></script>
 </head>
 
 <body>
+    <div id="loggedInUser" style="display: none;"></div>
     <header>
         <nav class="navbar navbar-dark lighten-4  navbar-expand-lg">
             <div class="container position-relative">
@@ -50,6 +53,10 @@
                         <button type="button" id="loginButton" aria-expanded="false" aria-controls="collapseExample"
                             class="btn btn-danger" data-toggle="modal" data-target="#loginModal"> ZALOGUJ SIĘ <i
                                 class="fas fa-level-down-alt"></i></button>
+                        <a href="../index.html"><button id="hideLoggedInUserButton" class="btn btn-success"
+                                aria-expanded="false" aria-controls="collapseExample"
+                                style="display: none; float: right;">Wyloguj</button></a>
+
                     </div>
                 </div>
                 <div class="collapse modal-button-position" id="collapseExample">
@@ -134,7 +141,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="../rejestracja/rejestracja.html" class="btn btn-success">Zarejestruj się</button></a>
+                    <a href="../rejestracja/rejestracja.html" class="btn btn-success">Zarejestruj się</a>
                     <button type="button" class="btn btn-primary" id="loginSubmitButton">Zaloguj</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
                 </div>
@@ -142,7 +149,7 @@
         </div>
     </div>
     <section class="footer">
-        <div class="containter">
+        <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <img src="../img/diet.png" class="d-inline-block mb-3 logo" alt="logo"
@@ -176,10 +183,8 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="../sw.js"></script>
-    <script src="../logowanie.js"></script>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-<script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
